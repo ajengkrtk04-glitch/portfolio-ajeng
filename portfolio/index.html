@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajeng Kartika Aulia Kurniawan | Portofolio</title>
+  <!-- EDIT: ganti deskripsi untuk Google & pratinjau link -->
+  <meta name="description" content="Portofolio Ajeng Kartika Aulia Kurniawan, mahasiswa Teknik Informatika: proyek, keahlian, dan kontak.">
+  <meta name="theme-color" content="#050510">
+  <meta property="og:title" content="Ajeng Kartika Aulia Kurniawan | Portofolio">
+  <meta property="og:image" content="images/profile.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Latar: foto danau & gunung (images/background.jpg), diatur di CSS -->
+  <div class="scene" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#beranda" aria-label="Kembali ke atas">AK</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="nav" aria-label="Navigasi utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- BERANDA -->
+    <section id="beranda" class="hero">
+      <div class="hero-text">
+        <!-- EDIT: nama lengkap -->
+        <h1 class="hero-name">Welcome to My Portfolio</h1>
+        <!-- EDIT: satu kalimat tentang bidang yang kamu tekuni -->
+        <p class="hero-lead">Mahasiswa Teknik Informatika semester dua yang sedang belajar membuat website dan aplikasi, dan senang mengubah ide menjadi sesuatu yang bisa dipakai orang.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#portofolio">Lihat portofolio</a>
+          <a class="btn btn-ghost" href="#kontak">Hubungi saya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="panel">
+      <div class="panel-inner">
+        <h2 class="center">Tentang saya</h2>
+
+        <div class="about-grid">
+          <div class="about-left">
+            <p class="about-hi">Halo, saya</p>
+            <p class="about-name">Ajeng Kartika Aulia Kurniawan</p>
+            <a class="btn btn-solid" href="#kontak">Hubungi saya</a>
+          </div>
+
+          <!-- Foto di tengah. EDIT: ganti images/profile.jpg dengan foto lain jika mau -->
+          <figure class="about-photo">
+            <img src="images/profile.jpg" alt="Foto Ajeng Kartika" width="640" height="640" loading="lazy">
+          </figure>
+
+          <div class="about-right">
+            <!-- EDIT: sesuaikan dua paragraf ini dengan ceritamu -->
+            <p>Saya mahasiswa <strong>Teknik Informatika</strong> semester dua di Universitas Dipa Makassar. Saat ini saya sedang membangun dasar-dasar pemrograman, mulai dari logika dan algoritma sampai membuat tampilan website.</p>
+            <p>Saya belajar paling cepat dengan langsung membuat sesuatu, jadi portofolio ini saya isi dengan proyek-proyek yang saya kerjakan. Saya terbuka untuk belajar dari orang lain, bekerja dalam tim, dan mencoba hal baru.</p>
+            <a class="btn btn-ghost" href="#portofolio">Lihat projek</a>
+          </div>
+        </div>
+
+        <!-- PENDIDIKAN. Urutan dari yang terbaru.
+             EDIT: ganti tahun (20XX) dan taruh logo di folder images/education/
+             (nama file sesuai atribut src). Jika logo belum ada, tampil huruf inisial. -->
+        <h3 class="edu-title">Pendidikan</h3>
+        <ul class="edu-list">
+          <li class="edu-card">
+            <div class="edu-logo" data-initial="UD"><img src="images/education/undipa.jpeg" alt="" onerror="this.remove()"></div>
+            <div>
+              <h4>Universitas Dipa Makassar</h4>
+              <p>S1 Teknik Informatika</p>
+              <p class="edu-year"> masih kuliah semester 2</p>
+            </div>
+          </li>
+          <li class="edu-card">
+            <div class="edu-logo" data-initial="S4"><img src="images/education/sman4gowa.jpeg" alt="" onerror="this.remove()"></div>
+            <div>
+              <h4>SMAN 4 Gowa</h4>
+              <p>Sekolah Menengah Atas</p>
+              <p class="edu-year">2020 – 2023</p>
+            </div>
+          </li>
+          <li class="edu-card">
+            <div class="edu-logo" data-initial="S1"><img src="images/education/smpn1tinggimoncing.jpeg" alt="" onerror="this.remove()"></div>
+            <div>
+              <h4>SMPN 1 Tinggimoncong</h4>
+              <p>Sekolah Menengah Pertama</p>
+              <p class="edu-year">2017 – 2020</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian" class="panel">
+      <div class="panel-inner">
+        <h2>Keahlian</h2>
+        <p class="panel-intro">Yang sedang saya pelajari dan latih di kuliah.</p>
+        <!-- EDIT: ganti kelompok dan daftar keahlian -->
+        <dl class="skills">
+          <div class="skill-row">
+            <dt>Dasar web</dt>
+            <dd>HTML, CSS, JavaScript</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Pemrograman</dt>
+            <dd>Logika dan algoritma, struktur data dasar</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Desain</dt>
+            <dd>Canva, Figma, presentasi</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Alat kerja</dt>
+            <dd>Git dan GitHub, VS Code, Microsoft Office</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- PORTOFOLIO -->
+    <section id="portofolio" class="panel">
+      <div class="panel-inner">
+        <h2>Portofolio</h2>
+        <p class="panel-intro">Proyek yang saya kerjakan, sertifikat, prestasi, dan teknologi yang saya pakai.</p>
+
+        <div class="tabs" role="tablist" aria-label="Kategori portofolio">
+          <button class="tab" role="tab" id="tab-projects" aria-controls="panel-projects" aria-selected="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Projects
+          </button>
+          <button class="tab" role="tab" id="tab-certificates" aria-controls="panel-certificates" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Certificates
+          </button>
+          <button class="tab" role="tab" id="tab-achievements" aria-controls="panel-achievements" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            Achievements
+          </button>
+          <button class="tab" role="tab" id="tab-stack" aria-controls="panel-stack" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg>
+            Tech Stack
+          </button>
+        </div>
+
+        <div id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
+          <div class="grid grid-3" data-render="projects"></div>
+        </div>
+        <div id="panel-certificates" role="tabpanel" aria-labelledby="tab-certificates" hidden>
+          <div class="grid grid-3" data-render="certificates"></div>
+        </div>
+        <div id="panel-achievements" role="tabpanel" aria-labelledby="tab-achievements" hidden>
+          <div class="grid grid-2" data-render="achievements"></div>
+        </div>
+        <div id="panel-stack" role="tabpanel" aria-labelledby="tab-stack" hidden>
+          <div class="tiles" data-render="stack"></div>
+        </div>
+      </div>
+    </section>
+
+        <!-- KONTAK -->
+    <section id="kontak" class="panel">
+      <div class="panel-inner contact">
+        <div class="contact-intro">
+          <h2>Kontak</h2>
+          <p>Ada proyek, ajakan kolaborasi, atau sekadar ingin menyapa? Tulis pesan di samping atau hubungi lewat tautan di bawah.</p>
+          <ul class="link-cards">
+            <li>
+              <a href="mailto:ajengkrtk04@gmail.com">
+                <span class="link-icon">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+                </span>
+                <span class="link-text"><strong>Email</strong><small>ajengkrtk04@gmail.com</small></span>
+                <span class="link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/usernamekamu" target="_blank" rel="noopener">
+                <span class="link-icon">
+                  <svg viewBox="0 0 24 24" width="40" height="40" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </span>
+                <span class="link-text"><strong>GitHub</strong><small>@usernamekamu</small></span>
+                <span class="link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/ajengaullya_" target="_blank" rel="noopener">
+                <span class="link-icon">
+                  <svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0">
+                        <stop offset="0" stop-color="#feda75"/>
+                        <stop offset="0.3" stop-color="#fa7e1e"/>
+                        <stop offset="0.55" stop-color="#d62976"/>
+                        <stop offset="0.8" stop-color="#962fbf"/>
+                        <stop offset="1" stop-color="#4f5bd5"/>
+                      </linearGradient>
+                    </defs>
+                    <rect width="48" height="48" rx="12" fill="url(#igGrad)"/>
+                    <rect x="11" y="11" width="26" height="26" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+                    <circle cx="24" cy="24" r="6.5" fill="none" stroke="#fff" stroke-width="3"/>
+                    <circle cx="32" cy="16" r="2" fill="#fff"/>
+                  </svg>
+                </span>
+                <span class="link-text"><strong>Instagram</strong><small>@ajengaullya_</small></span>
+                <span class="link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ajeng-kartika-aulia-kurniawan-642545424" target="_blank" rel="noopener">
+                <span class="link-icon">
+                  <svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="true">
+                    <rect width="48" height="48" rx="10" fill="#0A66C2"/>
+                    <rect x="9" y="19" width="6.5" height="20" fill="#fff"/>
+                    <circle cx="12.25" cy="12.5" r="3.9" fill="#fff"/>
+                    <path d="M20 19h6.2v2.8c1-1.8 3.1-3.3 6.2-3.3 6 0 7.6 3.800 7.600 9.200V39h-6.500v-9.600c0-2.400-.5-4.400-3.100-4.400-2.700 0-3.400 1.900-3.400 4.500V39H20z" fill="#fff"/>
+                  </svg>
+                </span>
+                <span class="link-text"><strong>LinkedIn</strong><small>Ajeng Kartika Aulia Kurniawan</small></span>
+                <span class="link-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <h3 class="form-title">Hubungi</h3>
+          <p class="form-sub">Ada yang mau didiskusikan? Langsung kirim pesan aja ya...</p>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="f-name">Nama</label>
+              <div class="input-wrap">
+                <svg class="field-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Nama Anda" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email</label>
+              <div class="input-wrap">
+                <svg class="field-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+                <input id="f-email" name="email" type="email" autocomplete="email" placeholder="Email Anda" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-msg">Pesan</label>
+              <div class="input-wrap input-wrap-area">
+                <svg class="field-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
+                <textarea id="f-msg" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+              </div>
+            </div>
+
+            <!-- Kolom jebakan untuk bot spam: jangan dihapus, jangan diisi -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="btn btn-solid btn-full" type="submit">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+              <span>Kirim Pesan</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Ajeng Kartika Aulia Kurniawan</p>
+    <a href="#beranda">Kembali ke atas</a>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Pratinjau sertifikat">
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lightbox-close" type="button" data-close>Tutup</button>
+  </dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
